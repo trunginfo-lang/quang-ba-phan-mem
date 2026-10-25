@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081c31">
+  <meta name="description" content="Khám phá Sổ QR và Tra Cứu Hóa Đơn trên Windows, Android. Tải bản phát hành, xem tính năng và liên hệ Trung để dùng thử 7 ngày.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sổ QR & Tra Cứu Hóa Đơn | Trung Software">
+  <meta property="og:description" content="Hai công cụ hỗ trợ tra cứu hóa đơn, tạo QR ngân hàng và in phiếu. Dùng thử 7 ngày, hỗ trợ qua Zalo.">
+  <title>Sổ QR & Tra Cứu Hóa Đơn | Trung Software</title>
+  <style>
+    :root{color-scheme:dark;--bg:#071727;--card:#0d2538;--panel:#102d43;--edge:rgba(163,208,233,.14);--text:#eaf8ff;--muted:#a5c0d2;--teal:#47e8c3;--blue:#70c7ff;--gold:#ffd585;--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.57}
+    body:before{content:"";position:absolute;z-index:-1;width:100%;height:760px;top:0;left:0;background:radial-gradient(ellipse at 80% 8%,#1d5e70a6 0%,transparent 42%),radial-gradient(ellipse at 0% 45%,#1f426cb3 0%,transparent 41%)}
+    a{color:inherit;text-decoration:none}button{font:inherit}strong{font-weight:760}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.eyebrow{color:var(--teal);font-weight:800;font-size:.76rem;letter-spacing:.15em;text-transform:uppercase}
+    header{position:sticky;top:0;z-index:20;backdrop-filter:blur(18px);background:#061827dd;border-bottom:1px solid var(--edge)}.topbar{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:14px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.02em}.mark{display:grid;place-items:center;width:39px;height:39px;border-radius:12px;background:linear-gradient(140deg,var(--teal),var(--blue));color:#052a36;font-size:22px;font-weight:1000;box-shadow:0 0 25px #40d9b233}.brand small{display:block;font-size:10px;letter-spacing:.2em;color:var(--muted);font-weight:700}.nav{display:flex;align-items:center;gap:20px;font-size:.9rem;color:#c5dce9}.nav a:hover,.footer a:hover{color:var(--teal)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:47px;border-radius:12px;padding:12px 19px;font-weight:800;font-size:.94rem;transition:transform .15s,border-color .15s,background .15s;border:1px solid transparent;cursor:pointer;text-align:center}.btn:hover{transform:translateY(-2px)}.btn.primary{background:linear-gradient(120deg,var(--teal),#8beadf);color:#082b36;box-shadow:0 9px 22px #1ddcb622}.btn.secondary{background:#15354c;color:#e6f7ff;border-color:#446479}.btn.outline{border-color:#44718a;color:#dff5ff;background:#0d2b41}.btn.small{min-height:37px;padding:7px 14px;font-size:.83rem}.btn:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .hero{display:grid;grid-template-columns:1fr .92fr;align-items:center;gap:45px;padding:78px 0 60px}.hero h1{font-size:clamp(2.5rem,4.8vw,4.5rem);letter-spacing:-.05em;line-height:1.12;margin:15px 0 21px}.hero h1 span{background:linear-gradient(90deg,var(--teal),var(--blue));color:transparent;background-clip:text}.hero p{max-width:590px;color:#bdd3e2;font-size:1.07rem}.chips{display:flex;flex-wrap:wrap;gap:9px;margin:25px 0}.chip{border:1px solid #357287;background:#173c53a6;color:#c9f5f0;font-size:.81rem;border-radius:50px;padding:7px 12px;font-weight:650}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:21px}
+    .hero-visual{position:relative;isolation:isolate;padding:21px;border:1px solid #38617c77;background:linear-gradient(145deg,#183f59d9,#081d32ed);box-shadow:0 30px 90px #0005;border-radius:28px;transform:rotate(-1deg)}.hero-visual:before{content:"";position:absolute;z-index:-1;inset:-23px 28px 40px -22px;filter:blur(38px);border-radius:60px;background:#229da351}.window{overflow:hidden;border-radius:15px;border:1px solid #4f779278;background:#0b2134}.chrome{height:34px;border-bottom:1px solid #2a5067;display:flex;align-items:center;gap:6px;padding:0 13px;color:#b6cad7;font-size:.72rem}.dot{width:7px;height:7px;border-radius:50%;background:#6e8799}.dot:nth-child(1){background:#ff8b8d}.dot:nth-child(2){background:#ffd78a}.dot:nth-child(3){background:#69e0b0}.chrome b{margin-left:9px}.window-body{padding:18px}.visual-grid{display:grid;grid-template-columns:1fr 105px;gap:13px;align-items:start}.mini-label{font-size:.69rem;color:#a6c5d6;letter-spacing:.06em}.fake-text{height:12px;border-radius:10px;background:#416a7b;margin:7px 0}.fake-text.narrow{width:62%}.fake-text.medium{width:87%}.qr{width:105px;height:105px;border:8px solid #eaf9fa;border-radius:9px;background-color:white;background-image:linear-gradient(90deg,#092638 50%,transparent 50%),linear-gradient(#092638 50%,transparent 50%);background-size:16px 16px;background-blend-mode:multiply;position:relative}.qr:before,.qr:after{content:"";position:absolute;border:9px solid #092638;width:22px;height:22px;background:#fff}.qr:before{left:5px;top:5px}.qr:after{right:5px;bottom:5px}.fake-banner{display:flex;justify-content:space-between;align-items:center;background:#144b55;border:1px solid #276b73;border-radius:12px;color:#bff6df;margin-top:16px;padding:11px;font-size:.8rem;font-weight:760}.receipt{background:#102a3e;border:1px solid #31516b;border-radius:13px;padding:14px;margin-top:15px}.receipt-line{display:flex;justify-content:space-between;color:#c5ddeb;font-size:.76rem;border-bottom:1px dashed #3c5969;padding:7px 0}.receipt-line:last-child{border:0;color:#77eccd;font-weight:800}.mini-float{position:absolute;right:-18px;bottom:-18px;background:#163f50;border:1px solid #4a8996;box-shadow:0 13px 40px #0008;border-radius:14px;padding:12px 15px;font-size:.74rem;font-weight:800;color:#d4fff5}
+    section{padding:65px 0}.section-heading{max-width:700px;margin-bottom:26px}.section-heading h2{font-size:clamp(1.9rem,3vw,2.8rem);line-height:1.18;margin:9px 0}.section-heading p{color:var(--muted);margin:0}.products{display:grid;grid-template-columns:1fr 1fr;gap:21px}.product{background:linear-gradient(155deg,#163850,#0c263a);border:1px solid #3b657d88;border-radius:var(--radius);padding:29px;position:relative;overflow:hidden}.product:before{position:absolute;content:"";width:240px;height:240px;right:-95px;top:-100px;background:#43e1c31d;border-radius:100%}.product:nth-child(2):before{background:#6a9aff29}.product-icon{display:grid;place-items:center;width:58px;height:58px;font-size:28px;border-radius:17px;background:#225d67;color:#d1fff4;margin-bottom:18px}.product:nth-child(2) .product-icon{background:#254969}.product h3{font-size:1.7rem;margin:0 0 5px}.version{font-size:.78rem;color:#9cebe2;font-weight:750}.product p{color:#c0d6e3;min-height:65px}.features{list-style:none;padding:0;display:grid;gap:10px;margin:20px 0 29px}.features li:before{content:"✓";font-weight:900;color:var(--teal);margin-right:10px}.product .actions{margin-top:12px}.product .fine{margin-top:15px;color:#9cb7c9;font-size:.78rem;min-height:0}.android{margin-top:8px}.android .btn{width:100%}
+    .pricing{background:#0a2032;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge)}.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.price{border:1px solid #355a71;background:#122d42;border-radius:var(--radius);padding:27px;display:flex;flex-direction:column;gap:7px}.price.highlight{border-color:#3eeac6;box-shadow:0 0 0 1px #29bda1aa,0 16px 40px #0002}.price h3{margin:0;font-size:1.1rem}.price .amount{font-size:2.15rem;font-weight:900;letter-spacing:-.04em;margin:5px 0}.price small{font-size:.85rem;color:var(--muted)}.price p{color:#b6ccd9;flex:1}.price .btn{width:100%}.faq{display:grid;grid-template-columns:1fr 1fr;gap:15px}.faq details{background:#102a3d;border:1px solid #365a70;border-radius:15px;padding:16px 19px}.faq summary{cursor:pointer;font-weight:760}.faq p{color:var(--muted);font-size:.89rem}.cta{border:1px solid #45979091;background:linear-gradient(115deg,#184b58,#102c46);border-radius:27px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{font-size:clamp(1.6rem,3vw,2.25rem);margin:0 0 9px}.cta p{color:#c5d9e5;margin:0}.footer{padding:32px 0 48px;color:#9ab4c4;border-top:1px solid var(--edge);font-size:.86rem}.footer .foot-inner{display:flex;gap:18px;justify-content:space-between;align-items:center;flex-wrap:wrap}.footer a{color:#c5eaf8}.notice{margin-top:15px;font-size:.79rem;color:#92aabb}.consent{display:none;position:fixed;bottom:18px;left:18px;right:18px;max-width:560px;margin:auto;z-index:50;padding:19px;background:#17374b;border:1px solid #5d8ca0;border-radius:16px;box-shadow:0 20px 55px #0008}.consent p{margin:7px 0 12px;font-size:.87rem;color:#d1e5ee}.consent .actions{margin-top:0}
+    @media(max-width:890px){.hero{grid-template-columns:1fr;padding:55px 0 30px}.hero-visual{max-width:500px;margin:auto;width:100%}.nav{gap:12px}.nav a:not(.btn){display:none}.products{grid-template-columns:1fr}.price-grid{grid-template-columns:1fr 1fr}.faq{grid-template-columns:1fr}}
+    @media(max-width:590px){.wrap{width:min(100% - 28px,1120px)}.brand{font-size:.89rem}.brand .mark{width:35px;height:35px}.hero{padding:42px 0 20px}.hero h1{font-size:2.55rem}.hero-visual{transform:none}.mini-float{right:7px;bottom:-13px}.section-heading{margin-bottom:20px}section{padding:45px 0}.product{padding:23px}.price-grid{grid-template-columns:1fr}.cta{padding:26px;display:block}.cta .btn{margin-top:20px;width:100%}.btn{width:100%}.nav .btn{width:auto}.actions{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="#dau-trang" aria-label="Trung Software - về đầu trang"><span class="mark">T</span><span>TRUNG SOFTWARE<small>PHẦN MỀM TIỆN ÍCH</small></span></a>
+      <nav class="nav" aria-label="Điều hướng chính"><a href="#phan-mem">Phần mềm</a><a href="#bang-gia">Bảng giá</a><a href="#hoi-dap">Hỏi đáp</a><a class="btn small primary" href="https://zalo.me/0963697874" target="_blank" rel="noopener noreferrer" data-event="contact_click" data-product="both">Liên hệ Zalo</a></nav>
+    </div>
+  </header>
+
+  <main id="dau-trang">
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Tiện ích thực tế cho công việc mỗi ngày</div>
+        <h1>Thao tác nhanh hơn.<br><span>Công việc nhẹ hơn.</span></h1>
+        <p>Hai phần mềm hỗ trợ tạo mã QR ngân hàng, in phiếu và tra cứu hóa đơn trên máy tính, điện thoại. Giao diện dễ dùng, có người hỗ trợ khi cần.</p>
+        <div class="chips"><span class="chip">✓ Dùng thử 7 ngày</span><span class="chip">✓ Hỗ trợ Windows</span><span class="chip">✓ Có bản Android tra cứu</span></div>
+        <div class="actions"><a class="btn primary" href="#phan-mem">Khám phá phần mềm <span aria-hidden="true">↗</span></a><a class="btn secondary" href="https://zalo.me/0963697874" target="_blank" rel="noopener noreferrer" data-event="contact_click" data-product="both">Nhắn Zalo cho Trung</a></div>
+      </div>
+      <div class="hero-visual" aria-label="Minh họa giao diện quản lý QR và bảng kê">
+        <div class="window"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><b>Sổ QR · Mô phỏng giao diện</b></div>
+          <div class="window-body"><div class="visual-grid"><div><div class="mini-label">THÔNG TIN THANH TOÁN</div><div class="fake-text medium"></div><div class="fake-text narrow"></div><div class="fake-text"></div><div class="fake-text narrow"></div></div><div class="qr" aria-hidden="true"></div></div>
+            <div class="fake-banner"><span>✓ Sẵn sàng tạo phiếu QR</span><span>In phiếu ↗</span></div>
+            <div class="receipt"><div class="mini-label">BẢNG KÊ TIỀN · MINH HỌA</div><div class="receipt-line"><span>500.000đ × 4</span><span>2.000.000đ</span></div><div class="receipt-line"><span>200.000đ × 3</span><span>600.000đ</span></div><div class="receipt-line"><span>Tổng tiền</span><span>2.600.000đ</span></div></div>
+          </div>
+        </div><div class="mini-float">⚡ Sổ QR + Tra cứu hóa đơn</div>
+      </div>
+    </div>
+
+    <section id="phan-mem" class="wrap">
+      <div class="section-heading"><div class="eyebrow">02 giải pháp · 01 nơi tải chính thức</div><h2>Chọn phần mềm phù hợp với anh/chị</h2><p>Liên kết phát hành được cung cấp từ kho GitHub do Trung quản lý.</p></div>
+      <div class="products">
+        <article class="product">
+          <div class="product-icon" aria-hidden="true">▦</div><div class="version">WINDOWS · BẢN V5.9.8</div><h3>Sổ Giao Dịch QR</h3>
+          <p>Tạo mã QR ngân hàng, trình bày thông tin nhận tiền và hỗ trợ in phiếu, bảng kê tiền tại quầy.</p>
+          <ul class="features"><li>Tạo QR thanh toán và phiếu giao dịch</li><li>In phiếu, bảng kê với bố cục linh hoạt</li><li>Tùy chỉnh khổ giấy và cấu hình máy in</li><li>Có bản dùng thử và key theo thời hạn</li></ul>
+          <a class="btn primary" href="https://github.com/trunginfo-lang/so-giao-dich-qr-updates-old/releases/download/v5.9.8/SO_GIAO_DICH_QR_UPDATE_V5_9_8.zip" target="_blank" rel="noopener noreferrer" data-event="download_click" data-product="so_qr" data-platform="windows">Tải gói Sổ QR V5.9.8 ↗</a>
+          <p class="fine">File ZIP phát hành trên GitHub. Nếu cài mới hoặc cần hướng dẫn giải nén, vui lòng liên hệ Trung.</p>
+        </article>
+        <article class="product">
+          <div class="product-icon" aria-hidden="true">▤</div><div class="version">WINDOWS V1.0.3 · ANDROID V0.9.5</div><h3>Tra Cứu Hóa Đơn</h3>
+          <p>Tra cứu mã khách hàng, kiểm tra hóa đơn, lọc mã còn nợ và thao tác thuận tiện trên nhiều thiết bị.</p>
+          <ul class="features"><li>Tra cứu danh sách mã khách hàng</li><li>Lọc các mã còn nợ để xử lý tiếp</li><li>Có phiên bản Windows và Android</li><li>Hỗ trợ trong quá trình cài đặt, sử dụng</li></ul>
+          <a class="btn primary" href="https://github.com/trunginfo-lang/tra-cuu-hoa-don-updates/releases/download/v1.0.3/TraCuuHoaDon_UPDATE_V1_0_3.zip" target="_blank" rel="noopener noreferrer" data-event="download_click" data-product="tra_cuu" data-platform="windows">Tải bản Windows V1.0.3 ↗</a>
+          <div class="android"><a class="btn outline" href="https://github.com/trunginfo-lang/tra-cuu-hoa-don-android-updates/releases/download/v0.9.5/TraCuuHoaDon.apk" target="_blank" rel="noopener noreferrer" data-event="download_click" data-product="tra_cuu" data-platform="android">Tải bản Android V0.9.5 ↗</a></div>
+          <p class="fine">Bản Windows ở định dạng ZIP, Android ở định dạng APK. Chỉ cài đặt bản APK từ nguồn tin cậy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing" id="bang-gia">
+      <div class="wrap"><div class="section-heading"><div class="eyebrow">Dùng thử trước · Chọn gói sau</div><h2>Chi phí rõ ràng, dễ bắt đầu</h2><p>Giá áp dụng theo chính sách hiện tại của Trung. Liên hệ để xác nhận gói cho sản phẩm và thiết bị cần dùng.</p></div>
+        <div class="price-grid">
+          <article class="price"><h3>Dùng thử</h3><div class="amount">0đ</div><small>7 ngày</small><p>Trải nghiệm tính năng trước khi quyết định mua bản quyền.</p><a class="btn outline" href="https://zalo.me/0963697874" target="_blank" rel="noopener noreferrer" data-event="contact_click" data-product="trial">Hỏi cách dùng thử</a></article>
+          <article class="price highlight"><div class="eyebrow">Lựa chọn phổ biến</div><h3>Gói 6 tháng</h3><div class="amount">150.000đ</div><small>Thời hạn 6 tháng</small><p>Phù hợp khi muốn sử dụng thường xuyên với mức chi phí gọn nhẹ.</p><a class="btn primary" href="https://zalo.me/0963697874" target="_blank" rel="noopener noreferrer" data-event="contact_click" data-product="key_6_months">Liên hệ mua key</a></article>
+          <article class="price"><h3>Gói 12 tháng</h3><div class="amount">250.000đ</div><small>Thời hạn 12 tháng</small><p>Phù hợp sử dụng lâu dài, ít phải gia hạn.</p><a class="btn outline" href="https://zalo.me/0963697874" target="_blank" rel="noopener noreferrer" data-event="contact_click" data-product="key_12_months">Liên hệ mua key</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="hoi-dap">
+      <div class="section-heading"><div class="eyebrow">Giải đáp nhanh</div><h2>Câu hỏi thường gặp</h2></div>
+      <div class="faq">
+        <details><summary>Có dùng thử trước khi mua không?</summary><p>Có. Chương trình hỗ trợ dùng thử 7 ngày. Anh/chị có thể liên hệ Zalo Trung để được hướng dẫn kích hoạt.</p></details>
+        <details><summary>Tra cứu hóa đơn có bản điện thoại không?</summary><p>Có phiên bản Android bên cạnh Windows. Vui lòng chọn nút tải tương ứng với thiết bị.</p></details>
+        <details><summary>Làm sao nhận key bản quyền?</summary><p>Liên hệ Trung qua Zalo, thông báo phần mềm và thời hạn cần mua. Key sẽ được cấp theo quy trình kích hoạt của từng sản phẩm sau khi xác nhận thanh toán.</p></details>
+        <details><summary>Tải file ZIP xong phải làm gì?</summary><p>Giải nén file tải về. Nếu gói tải là bản cập nhật hoặc anh/chị chưa có chương trình gốc, hãy liên hệ Trung để nhận hướng dẫn cài mới phù hợp.</p></details>
+      </div>
+    </section>
+
+    <section class="wrap" id="lien-he"><div class="cta"><div><div class="eyebrow">Liên hệ dùng thử và hỗ trợ</div><h2>Cần hỗ trợ? Có Trung ở đây.</h2><p>Zalo / Điện thoại: <strong>0963 697 874</strong> · Tư vấn chọn phần mềm, cài đặt và kích hoạt key.</p></div><a class="btn primary" href="https://zalo.me/0963697874" target="_blank" rel="noopener noreferrer" data-event="contact_click" data-product="both">Nhắn Zalo ngay ↗</a></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><div class="foot-inner"><div><strong>TRUNG SOFTWARE</strong><div>Sổ QR & Tra Cứu Hóa Đơn</div></div><div><a href="#phan-mem">Phần mềm</a> · <a href="#bang-gia">Bảng giá</a> · <a href="https://github.com/trunginfo-lang" target="_blank" rel="noopener noreferrer">GitHub phát hành</a></div></div><p class="notice">Website giới thiệu phần mềm độc lập. Các liên kết tải dẫn đến GitHub Releases; số lần bấm tải không đồng nghĩa số lượt cài đặt thành công. Việc thống kê truy cập chỉ hoạt động sau khi kết nối Analytics và có sự đồng ý của khách truy cập.</p></div></footer>
+
+  <div id="consent" class="consent" role="dialog" aria-label="Cho phép thống kê truy cập"><strong>Thống kê truy cập</strong><p>Cho phép thu thập dữ liệu truy cập tổng hợp để Trung biết bài giới thiệu nào hữu ích? Anh/chị có thể từ chối và vẫn sử dụng website bình thường.</p><div class="actions"><button class="btn small primary" id="acceptStats" type="button">Đồng ý</button><button class="btn small secondary" id="declineStats" type="button">Không đồng ý</button></div></div>
+  <script>
+    /* Thêm mã GA4 dạng G-XXXXXXXXXX vào đây sau khi tạo tài khoản Google Analytics.
+       Khi chưa điền, website hoạt động bình thường nhưng CHƯA THU THẬP thống kê. */
+    const GA4_ID = "";
+    const consentKey = "trung_software_analytics_consent";
+    let analyticsActive = false;
+    function enableAnalytics() {
+      if (!/^G-[A-Z0-9]+$/.test(GA4_ID)) return;
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA4_ID);
+      document.head.appendChild(script);
+      window.gtag("js", new Date());
+      window.gtag("config", GA4_ID);
+      analyticsActive = true;
+    }
+    if (/^G-[A-Z0-9]+$/.test(GA4_ID)) {
+      const state = localStorage.getItem(consentKey);
+      if (state === "yes") enableAnalytics();
+      else if (state !== "no") document.getElementById("consent").style.display = "block";
+    }
+    document.getElementById("acceptStats").addEventListener("click", function () {
+      localStorage.setItem(consentKey, "yes");
+      document.getElementById("consent").style.display = "none";
+      enableAnalytics();
+    });
+    document.getElementById("declineStats").addEventListener("click", function () {
+      localStorage.setItem(consentKey, "no");
+      document.getElementById("consent").style.display = "none";
+    });
+    document.querySelectorAll("a[data-event]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (!analyticsActive || !window.gtag) return;
+        window.gtag("event", link.dataset.event, {
+          product: link.dataset.product || "unknown",
+          platform: link.dataset.platform || "web",
+          outbound_url: link.href
+        });
+      });
+    });
+  </script>
+</body>
+</html>
